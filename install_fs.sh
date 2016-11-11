@@ -149,7 +149,7 @@ function install_finalspeed(){
 	
 	unzip -o $package_save_name  -d $install_path
 	
-	sh ${install_path}"restart.sh"
+	sh ${install_path}"restart.sh" && exit 0
 	tail -f ${install_path}"server.log"
 }
 
