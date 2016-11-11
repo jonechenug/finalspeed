@@ -148,6 +148,7 @@ function install_finalspeed(){
 	fi
 	
 	unzip -o $package_save_name  -d $install_path
+	tail -f ${install_path}"server.log"
 }
 
 
